@@ -1,5 +1,6 @@
 let width = 400
 let height = 400
+let circleIteration = 0
 
 function setup() {
   createCanvas(width, height);
@@ -16,5 +17,10 @@ function draw() {
   let black = random(0,255)
   let alpha = random(0, 255)
 
-  
+  circle(x, y, diameter)
+  fill(red, green, black, alpha)
+
+
+  console.log(circleIteration)
+  circleIteration++
 }
