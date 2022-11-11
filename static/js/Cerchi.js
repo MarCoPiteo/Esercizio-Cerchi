@@ -1,5 +1,5 @@
-let width = 400
-let height = 400
+let width = 900
+let height = 600
 let circleIteration = 0
 
 function setup() {
@@ -18,9 +18,15 @@ function draw() {
   let alpha = random(0, 255)
 
   circle(x, y, diameter)
+  strokeWeight(1)
   fill(red, green, black, alpha)
 
 
   console.log(circleIteration)
   circleIteration++
+
+  if(circleIteration == 1000) {
+    background("green");
+    circleIteration = 0
+  }
 }
